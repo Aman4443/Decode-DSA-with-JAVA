@@ -15,4 +15,5 @@ public class dynamicSize {
         for(int ele : brr){
             System.out.print(ele +" ");
         }
-}}
+}
+}
