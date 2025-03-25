@@ -1,0 +1,20 @@
+package PatternPrinting;
+import java.util.*;
+public class sameAlphabet {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the value : ");
+        int n = sc.nextInt();
+        for (int i = 1; i < n; i++) {
+            for (int j = 1; j < n; j++) {
+                System.out.print((char)(i+64) + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+// 1 1 1 1
+// 2 2 2 2
+// 3 3 3 3
+// 4 4 4 4
