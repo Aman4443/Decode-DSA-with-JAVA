@@ -1,0 +1,21 @@
+package PatternPrinting;
+import java.util.*;
+public class starrectangle {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the Value  m: ");
+        System.out.println("Enter the Value  n: ");
+        int m = sc.nextInt();
+        int n = sc.nextInt();
+        for (int i = 0; i <= m; i++) { // rows
+            for (int j = 0; j <=n; j++) { // Cols
+                System.out.print("*"+" ");
+            }
+            System.out.println();
+        }
+    }
+}
+// * * * *
+// * * * *
+// * * * *
+// * * * *
