@@ -1,0 +1,24 @@
+package PatternPrinting;
+
+import java.util.Scanner;
+
+public class mixtureTriangle {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the Value: ");
+        int n = sc.nextInt();
+
+        for (int i = 1; i <= n; i++) {  // Outer loop goes up to n
+            for (int j = 1; j <= i; j++) {  // Inner loop goes up to i
+                if (i % 2 == 0) {
+                    // For even rows, print characters (A=65 in ASCII, B=66, etc.)
+                    System.out.print((char)(j + 64) + " ");
+                } else {
+                    // For odd rows, print numbers
+                    System.out.print(j + " ");
+                }
+            }
+            System.out.println(); // Move to the next line after each row
+        }
+    }
+}
