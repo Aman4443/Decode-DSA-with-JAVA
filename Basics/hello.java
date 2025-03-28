@@ -1,4 +1,5 @@
 import java .util.*;
+// WAP in Hello
 public class hello {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
