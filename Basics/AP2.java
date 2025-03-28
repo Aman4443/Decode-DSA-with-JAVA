@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+// WAP to find numbers from AP
 public class AP2 {
      public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
