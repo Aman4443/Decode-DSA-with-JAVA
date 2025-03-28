@@ -1,3 +1,4 @@
+// WAP to Find AP Series
 import java.util.*;
 public class Ap {
     public static void main(String[] args) {
