@@ -1,3 +1,4 @@
+// WAP to Print the Numbers
 public class numbers {
     public static void main(String[] args) {
         //  Scannner sc = new Scanner(System.in);
