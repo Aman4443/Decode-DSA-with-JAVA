@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+// WAP to Print the Design in star Pattern
 public class starPlus {
      public static void main(String[]args) {
         Scanner sc = new Scanner(System.in);
