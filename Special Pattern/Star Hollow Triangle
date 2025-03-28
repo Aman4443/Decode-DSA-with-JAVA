@@ -1,0 +1,22 @@
+package SpecialPattern;
+import java.util.*;
+public class starHollowReactangle {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the Value: ");
+        int n = sc.nextInt();
+
+        // Outer Loop
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) {
+                // Boundary Condition
+                if (i == 1 || i == n || j == 1 || j == n) {
+                    System.out.print("* ");  // Print star and stay on the same line
+                } else {
+                    System.out.print("  ");  // Print space and stay on the same line
+                }
+            }
+            System.out.println();  // Move to the next line after printing one row
+        }
+    }
+}
