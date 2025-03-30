@@ -1,0 +1,15 @@
+package Recursion;
+import java.util.*;
+public class nthStaris {
+    public static int stairs(int n ){
+        if(n<=2) return n;
+        else return stairs(n-1) + stairs(n-2);
+    }
+    // WAP to find no. of ways to get the top either directly by 1 or 2 stairs
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the Value : ");
+        int n = sc.nextInt();
+        System.out.println(stairs(n));
+    }
+}
