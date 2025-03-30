@@ -1,0 +1,23 @@
+package Recursion;
+import java.util.*;
+
+public class powerLinear {
+    public static int pow(int a, int b) {
+        // Base case: any number raised to power 0 is 1
+        if (b == 0) {
+            return 1;
+        }
+        // Recursive case: a^b = a * a^(b-1)
+        return a * pow(a, b - 1);
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the base : ");
+        int a = sc.nextInt();
+        System.out.print("Enter the Power : ");
+        int b = sc.nextInt();
+
+        System.out.println(a + " raised to the power " + b + " is: " + pow(a, b));
+    }
+}
