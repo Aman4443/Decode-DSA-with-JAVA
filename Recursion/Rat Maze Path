@@ -1,0 +1,19 @@
+package Recursion;
+import java.util.*;
+// This is maze Rat Question from top left to Bottom Rignt Either go right or Down in one Step
+public class ratmazePath {
+    public static int maze(int row, int col, int m, int n){
+      if(row==m || col==n) return  1; // Base case
+        int rightWays = maze(row,col+1,m,n);
+        int downWays = maze(row+1,col,m,n);
+        return rightWays + downWays;
+    }
+    public static void main(String[] args) {
+            Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the value m : ");
+        int m = sc.nextInt();
+        System.out.print("Enter the value n : ");
+        int n = sc.nextInt();
+        System.out.println(maze(1,1,m,n));
+    }
+}
