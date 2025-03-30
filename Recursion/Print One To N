@@ -1,0 +1,15 @@
+package Recursion;
+import java.util.*;
+public class printOneton {
+    public static void print(int x, int n){
+        if(x > n) return;
+        System.out.println(x);
+        print(x + 1, n);
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the value: ");
+        int n = sc.nextInt();
+        print(1, n); // pass n to the print method
+    }
+}
