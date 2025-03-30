@@ -1,16 +1,17 @@
 package Recursion;
 import java.util.*;
 
-public class factorial {
-    public static int fact(int n){
-        if (n==1) return 1; // Base class
-        int ans = n* fact(n-1); // Call
-        return ans;
+public class arrayTraversal {
+    public static void print(int i, int[] arr) {
+        if (i >= arr.length) { // Corrected the base case condition
+            return; // Terminate recursion when i is out of bounds
+        }
+        System.out.print(arr[i] + " "); // Changed println to print for continuous output
+        print(i + 1, arr);
     }
+
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the Number : ");
-        int n = sc.nextInt();
-        System.out.println(fact(n));
+        int[] arr = {1, 5, 4, 8, 6, 7, 3, 9};
+        print(0, arr);
     }
 }
