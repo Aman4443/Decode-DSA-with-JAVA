@@ -1,0 +1,46 @@
+package MegreSort;
+
+public class mergeTwoSortedArray {
+    public static void print(int[] arr) { // Corrected the parameter type
+        for (int ele : arr) {
+            System.out.print(ele + " ");
+        }
+        System.out.println();
+    }
+
+    public static int[] merge(int[] a, int[] b) {
+        int[] result = new int[a.length + b.length];
+        int i = 0, j = 0, k = 0;
+
+        while (i < a.length && j < b.length) {
+            if (a[i] <= b[j]) {
+                result[k++] = a[i++];
+            } else {
+                result[k++] = b[j++];
+            }
+        }
+
+        while (i < a.length) {
+            result[k++] = a[i++];
+        }
+
+        while (j < b.length) {
+            result[k++] = b[j++];
+        }
+
+        return result;
+    }
+
+    public static void main(String[] args) {
+        int[] a = {10, 30, 50, 70, 80};
+        int[] b = {40, 60, 90, 100};
+        System.out.print("Array a: ");
+        print(a);
+        System.out.print("Array b: ");
+        print(b);
+
+        int[] mergedArray = merge(a, b);
+        System.out.print("Merged Array: ");
+        print(mergedArray);
+    }
+}
