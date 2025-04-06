@@ -1,0 +1,14 @@
+package strings;
+
+import java.util.Scanner;
+
+public class convertstring {
+    // Here is the conversion of the Integer to a String
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the Number : ");
+        int y = sc.nextInt();
+        String str = " "+ y;
+        System.out.println(str);
+    }
+}
