@@ -1,0 +1,11 @@
+package strings;
+
+public class modifyString {
+    // Here we can modify the String given
+    public static void main(String[] args) {
+        String str = "AmanJha";
+        // Amanoha;
+        str = str.substring(0,4) +"O"+ str.substring(5);
+        System.out.println(str);
+    }
+}
