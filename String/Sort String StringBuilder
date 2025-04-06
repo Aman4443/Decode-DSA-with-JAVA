@@ -1,0 +1,28 @@
+package strings;
+import java.util.*;
+public class sortStringStringBuilder {
+    // here is the Sorting the String and StringBuilder
+    public static void main(String[] args) {
+        String str = "amankumarjha"+" ";
+        char[] ch = str.toCharArray();
+        for(char ele : ch ){
+            System.out.print(ele);
+        }
+        Arrays.sort(ch);
+        for(char ele: ch ){
+            System.out.print(ele);
+            // string individually canot be sort first convert to .toCharAray();
+            // then use Arrays.sort(ch)
+        }
+        System.out.println();
+        // In Same Way the StringBuilder also not sort Individually first make to string: .toString()
+        // And make to character array : .toCharArray();
+        //Then use The Arrays.sort();
+        StringBuilder q = new StringBuilder("nikhil");
+        char[] s = q.toString().toCharArray();
+        Arrays.sort(s);
+        for(char ele : s){
+            System.out.print(ele);
+        }
+    }
+}
