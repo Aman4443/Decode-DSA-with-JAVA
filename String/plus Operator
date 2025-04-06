@@ -1,0 +1,14 @@
+package strings;
+
+public class plusOperator {
+    // Here is the usage og +Operator and removes the usage of the concate function
+    public static void main(String[] args) {
+        String str = "Aman"+" ";
+        str+="Jha";
+        System.out.println(str);
+
+        String y = "abc"+" "+10+" ";
+        y = y+20;
+        System.out.println(y);
+    }
+}
