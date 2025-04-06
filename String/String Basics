@@ -1,0 +1,17 @@
+package strings;
+
+public class stringBasics {
+    // what is String : String is character Array
+    public static void main(String[] args) {
+        char[] s ={'a','b','c','d'};
+        for(char ele :s){
+            System.out.print(ele+" ");
+        }
+        System.out.println();
+// using for loop It can be done.
+        char[] w = {'a','r','y','u'};
+        for (int i = 0; i < w.length; i++) {
+            System.out.print(w[i]+" ");
+        }
+    }
+}
