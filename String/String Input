@@ -1,0 +1,12 @@
+package strings;
+import java.util.*;
+public class stringInput {
+    // Here Initialisation and deceleration of String and Taking input from user
+    public static void main(String[]args){
+        Scanner sc =new Scanner(System.in);
+        System.out.println("Enter the Name:"+" ");
+        String str = sc.nextLine();
+        System.out.print(str+" ");
+        System.out.println("Welcome!");
+    }
+}
