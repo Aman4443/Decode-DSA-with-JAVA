@@ -1,0 +1,14 @@
+package strings;
+import java.util.*
+;public class count {
+    // WAP to count the total number of digits in String Without using the loop'
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number : ");
+        int x = sc.nextInt();
+        String y = " "+ x;
+        System.out.println(y);
+        System.out.println(y.length());
+
+    }
+}
