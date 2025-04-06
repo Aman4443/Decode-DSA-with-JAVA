@@ -1,0 +1,34 @@
+package strings;
+public class stringsMethod {
+    // String Method and the use of indexOf() and compareTo();
+    public static void main(String[] args) {
+        String str = "Aman kumar jha";
+        System.out.println(str.indexOf('j'));
+        System.out.println(str.indexOf('h'));
+        System.out.println(str.indexOf('n'));
+        String s = "barsh";
+        String t = "barshaman";
+        System.out.println(s.compareTo(t));
+
+        // .contains
+        String y = "Aman Jha";
+        System.out.println(y.contains("Jha"));
+        System.out.println(y.contains("Jhaa"));
+
+        // .toLowerCase() and toUpperCase()
+        String g = "Nikhil";
+        g.toLowerCase();  // Noting will Work
+        // For This to work We need to store in on Seperete String and either Use in the print StateMent;
+        System.out.println(g.toLowerCase());
+        System.out.println(g.toUpperCase());
+
+        //.concat
+        String q = "pushpendra"+" ";
+        String w = "Pal";
+        q.concat(w); //  Noting will Work
+        // For This to work We need to store in on Seperete String and either Use in the print StateMent;
+        System.out.println(q.concat(w));
+
+
+    }
+}
