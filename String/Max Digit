@@ -1,0 +1,29 @@
+package strings;
+
+public class maxDigit {
+    // This is find a maximum digit in any String
+    public static void main(String[] args) {
+        String input = "abc12345xyz6789";
+        char maxDigit = findMaxDigit(input);
+        System.out.println("The maximum digit is: " + maxDigit);
+    }
+
+    public static char findMaxDigit(String str) {
+        char maxDigit = '0'; // Initialize with the smallest digit '0'
+
+        // Iterate through each character in the string
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+
+            // Check if the character is a digit
+            if (Character.isDigit(ch)) {
+                // If the digit is greater than the current max, update maxDigit
+                if (ch > maxDigit) {
+                    maxDigit = ch;
+                }
+            }
+        }
+        return maxDigit; // Return the maximum digit found
+    }
+    }
+
