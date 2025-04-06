@@ -1,0 +1,32 @@
+package strings;
+
+public class substring {
+    // here Dealing with the .substring(i) and .substring(i,j);
+    // in i means inclusion of i itself and after all the indices;
+    // in (i,j) from i to j-1;
+
+    public static void main(String[] args) {
+        String str = "aman kumar jha";
+
+        // Example of .substring(i)
+        System.out.println(str.substring(5)); // Starting from index 5
+
+        // Example of .substring(i, j)
+        System.out.println(str.substring(5, 10)); // From index 5 to 9 (exclusive)
+    }
+
+    public static class equals {
+        // isequal() : Is Checking the Individually Character By Character And == : Is Checking the address of The Given Strings
+        // All This is Possible in string Only;
+        // = : Is Assignment
+        // == : Is Comparison Operator
+        // String is Immutable in java And cannot be Changed it takes  lot of Space and Investment of Cost Inclusion;
+        public static void main(String[] args) {
+            String a = "Aman";
+            String b = "Aman";
+            String c = a+"";
+            System.out.println(a==c);
+            System.out.println(a.equals(b));
+        }
+    }
+}
