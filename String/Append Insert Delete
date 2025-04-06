@@ -1,0 +1,21 @@
+package strings;
+
+public class appendInsertDelete {
+    // here we are use append .insert() and .deleteCharAt(i) and .delete(i,j);
+    public static void main(String[] args) {
+        StringBuilder str = new StringBuilder("Aman");
+        str.append(" "+"Jha");
+        System.out.println(str);
+        // Insert
+        str.insert(4,"Kumar");
+        System.out.println(str);
+
+        // Delete
+        StringBuilder s = new StringBuilder("Nikhil Pal");
+        s.deleteCharAt(2);
+        System.out.println(s);
+        s.delete(6,9);
+        System.out.println(s);
+
+    }
+}
