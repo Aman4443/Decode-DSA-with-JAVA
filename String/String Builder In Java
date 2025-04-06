@@ -1,0 +1,16 @@
+package strings;
+
+public class stringBuilderInJava {
+    public static void main(String[] args) {
+        // Here is the Basics of the StringBuilder it's Decelerationa and Initialisation;
+        String str = "Aman";
+        StringBuilder s = new StringBuilder("Kumar Jha");
+        System.out.println(s);
+        System.out.println(s.capacity());
+        // Here The Initially the capacity is 16
+        // Clarify:
+        StringBuilder g = new StringBuilder();
+        System.out.println(g);
+        System.out.println(g.capacity());
+    }
+}
