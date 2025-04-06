@@ -1,0 +1,26 @@
+package strings;
+import java .util.*;
+public class togleChar {
+    // WAP to Toggle the String : If it is in Upper case Made it to LowerCase;
+    public static void main(String[] args) {
+    Scanner sc= new Scanner(System.in);
+        System.out.print("Enter any String : ");
+    StringBuilder str = new StringBuilder(sc.nextLine());
+        System.out.println(str);
+        int n = str.length();
+        for (int i = 0; i < n; i++) {
+            char ch = str.charAt(i);
+            int ascii = (int)ch;
+            if(ascii>=65 && ascii<=97){ // This is Capital;
+                ascii+=32;
+            }
+            else if(ascii>=97 && ascii<=127){
+                ascii-= 32;
+            }
+             ch = (char)ascii;
+            str.setCharAt(i,ch);
+        }
+        System.out.println(str);
+
+}
+}
