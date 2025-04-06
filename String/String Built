@@ -1,0 +1,11 @@
+package strings;
+
+public class stringBuilt {
+    //This is the Built in Strings i.e: charAt() and length();
+    public static void main(String[] args) {
+        String str = "Aman Kumar Jha";
+        System.out.println(str.charAt(8));
+        System.out.println(str.charAt(11));
+        System.out.println(str.charAt(7));
+    }
+}
