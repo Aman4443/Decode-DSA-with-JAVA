@@ -1,0 +1,11 @@
+package strings;
+
+public class StringBuilderMethod {
+    // Here the methods of the String Builder Such as .length() and .compareTo();
+    public static void main(String[] args) {
+        StringBuilder str = new StringBuilder("Aman");
+        StringBuilder s = new StringBuilder("Bman");
+        System.out.println(str.compareTo(s));
+        System.out.println(str.indexOf("n"));
+    }
+}
