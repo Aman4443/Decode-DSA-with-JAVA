@@ -1,0 +1,13 @@
+package strings;
+import java.util.*;
+public class InputStringBuilder {
+    // Here it so the get the Input from user end using Scanner Class
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        System.out.print("Enter the any String : ");
+        StringBuilder str = new StringBuilder(sc.nextLine());
+        System.out.println(str);
+        str.setCharAt(0,'R');
+        System.out.println(str);
+    }
+}
