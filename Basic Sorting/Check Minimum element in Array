@@ -1,0 +1,18 @@
+package BasicsSorting;
+
+public class minimumInArray {
+    // To Find the minimum array element in the Array
+    public static void main(String[] args) {
+        int[] arr = {10, -4, -20, 1, -6, 8};
+        int n = arr.length;
+        int min = Integer.MAX_VALUE;  // Initialize to the maximum possible value
+        int mindx = -1;  // To keep track of the index of the minimum element
+        for (int i = 0; i < n; i++) {
+            if (arr[i] < min) {
+                min = arr[i];  // Update the minimum value
+                mindx = i;     // Update the index of the minimum value
+            }
+        }
+        System.out.println(min + " " + mindx);  // Print the minimum value and its index
+    }
+}
