@@ -1,0 +1,44 @@
+package BasicsSorting;
+
+public class insertionSort {
+
+    // Method to print the array
+    public static void print(int[] arr){
+        // Iterate through the array and print each element
+        for(int ele : arr){
+            System.out.print(ele + " ");
+        }
+        // Move to the next line after printing all elements
+        System.out.println();
+    }
+
+    // Method to swap two elements in the array
+    public static void swap(int[] arr, int i, int j){
+        int temp = arr[i];  // Store the value of arr[i] in temp
+        arr[i] = arr[j];    // Assign arr[j] to arr[i]
+        arr[j] = temp;      // Assign temp (old value of arr[i]) to arr[j]
+    }
+
+    public static void main(String[] args) {
+        // Initial unsorted array
+        int[] arr = {10, -4, 20, 78, -6, 8};
+        int n = arr.length;  // Get the length of the array
+        print(arr);           // Print the original array
+
+        // Insertion Sort algorithm begins here
+        for (int i = 1; i < n; i++) { // Start from the second element (index 1)
+            // Compare the current element with the elements before it
+            for (int j = i; j > 0; j--) { // Traverse back through the sorted portion
+                // If the current element is smaller than the previous one, swap them
+                if (arr[j] < arr[j - 1]) {
+                    swap(arr, j, j - 1);  // Swap arr[j] and arr[j-1]
+                } else {
+                    // If no swap is needed, break the loop as the element is already in the correct position
+                    break;
+                }
+            }
+            // Print the array after each iteration to show progress
+            print(arr);
+        }
+    }
+}
