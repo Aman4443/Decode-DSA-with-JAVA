@@ -1,0 +1,19 @@
+package BasicsSorting;
+
+public class arrayIsSortedOrNot {
+    // WAP to check the given array is sorted or not.
+    public static void main(String[] args) {
+        int[] arr = {1,4,7,9};
+        int n = arr.length;
+        boolean flag = true; // This means the Array is Sorted.
+        for (int i = 0; i < n-1; i++) {
+            if(arr[i]>arr[i+1]){
+                flag = false; // Unsorted Array;
+                break;
+            }
+        }
+        if(flag == true){
+            System.out.println("Sorted Array");
+        } else System.out.println("Unsorted Array");
+    }
+}
